@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <title>PAGE TITLE</title>
+  <meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta property="og:locale" content="ja_JP">
+<meta property="fb:admins" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:url" content="">
+<meta property="og:site_name" content="">
+<meta property="og:type" content="blog">
+<meta property="og:image" content="assets/images/common/logo_ogp.png">
+
+<link rel="shortcut icon" href="assets/images/common/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="assets/images/common/apple-touch-icon-precomposed.png">
+<link rel="stylesheet" href="assets/lib/bulma.min.css">
+<link rel="stylesheet" href="assets/lib/ress.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<meta name="apple-mobile-web-app-capable" content="yes"></head>
+<link rel="apple-touch-icon" href="assets/images/icon.png" />
+
+<script> document.documentElement.className = document.documentElement.className.replace("no-js","js");</script>
+<script src="assets/lib/jquery.min.js"></script>
+
+</head>
+<body>
+  <!-- index -->
+<div class="section index" id="index">
+
+  <div class="zukan-icon">
+    <a href="#zukan"><img src="assets/images/icon/zukan.png"></a>
+  </div>
+
+  <div class="egg-container">
+    <div class="columns is-mobile">
+      <div class="column is-one-third start-gacha" >
+        <a href="#gacha">
+          <p>作品提出</p>
+          <img src="assets/images/egg/today-egg.png">
+        </a>
+      </div>
+      <div class="column is-one-third start-gacha" >
+        <a href="#gacha">
+          <p>情報の課題</p>
+          <img src="assets/images/egg/tomorrow-egg.png">
+        </a>
+      </div>
+      <div class="column is-one-third start-gacha" >
+        <a href="#gacha">
+          <p>数学レポート</p>
+          <img src="assets/images/egg/egg2.png">
+        </a>
+      </div>
+      <div class="column is-one-third start-gacha" >
+        <a href="#gacha">
+          <p>英語テスト</p>
+          <img src="assets/images/egg/egg3.png">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="egg-footer">
+    <div class="columns is-mobile">
+      <div class="column">
+        <img src="assets/images/icon/trash.png">
+      </div>
+      <div class="column is-two-fifths start-gacha" >
+        <a href="#gacha">
+          <img src="assets/images/icon/niwatori.png">
+        </a>
+      </div>
+      <div class="column">
+        <a href="#add">
+          <img src="assets/images/icon/plus.png">
+        </a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- zukan -->
+<div class="section zukan" id="zukan">
+  <header>
+    <div class="delete1">
+      <a href="#index">
+        <img src="assets/images/icon/delete.png">
+      </a>
+    </div>
+    図鑑
+  </header>
+  <div class="img-box"></div>
+  <div class="img-list-box">
+    <div class="columns is-mobile is-variable is-1"></div>
+  </div>
+</div>
+<!-- gacha -->
+<div class="section gacha" id="gacha">
+  <img class="gif" src="assets/images/gif/gacha.gif">
+  <div class="gacha-con"></div>
+</div>
+
+<!-- add -->
+<div class="section add" id="add">
+  <header>
+    <div class="delete1">
+      <a href="#index">
+        <img src="assets/images/icon/delete.png">
+      </a>
+    </div>
+    <div class="check">
+      <a href="#index">
+        <img src="assets/images/icon/check.png">
+      </a>
+    </div>
+  </header>
+  <form class="form">
+    <label>タイトル</label>
+    <input class="input" type="text" placeholder="ex) 課題">
+    <label>期日</label>
+    <input class="input" type="datetime-local" name="example1">
+    <label>コメント</label>
+    <textarea class="textarea"></textarea>
+  </form>
+</div>
+
+  <script>
+// スクロールを無効にする
+$(window).on('touchmove.noScroll', function(e) {
+    e.preventDefault();
+});
+
+$(function(){
+  var birds_array = [
+    [
+      {
+        "rare": "SSR",
+        "name": "シロフクロウ",
+        "imgUrl": "シロフクロウ.png",
+        "get": false,
+      },
+      {
+        "rare": "SSR",
+        "name": "シマエナガ",
+        "imgUrl": "シマエナガ.png",
+        "get": false,
+      },
+    ],
+    [
+      {
+        "rare": "SR",
+        "name": "モモイロペリカン",
+        "imgUrl": "モモイロペリカン.png",
+        "get": false,
+      },
+    ],
+    [
+      {
+        "rare": "R",
+        "name": "カモメ",
+        "imgUrl": "カモメ.png",
+        "get": false,
+      },
+      {
+        "rare": "R",
+        "name": "アビ",
+        "imgUrl": "アビ.png",
+        "get": false,
+      },
+    ],
+    [
+      {
+        "rare": "N",
+        "name": "スズメ",
+        "imgUrl": "スズメ.png",
+        "get": false,
+      },
+      {
+        "rare": "N",
+        "name": "ハト",
+        "imgUrl": "カワラバト.png",
+        "get": false,
+      },
+    ]
+  ];
+
+  birdsList()
+  // 確率操作
+  var rareProbability = [5, 15, 30, 50]
+
+  var randomProbability = 100
+  var bird;
+  var probability;
+
+
+  // min から max までの乱整数を返す関数
+  function getRandomInt(min, max) {
+    return Math.floor( Math.random() * (max - min + 1) ) + min;
+  }
+
+  function rareProbabilityAmount(count){
+    var amount = 0;
+    for(var i = 0; i<=count; i++ ){
+      amount += rareProbability[i]
+    }
+    return amount
+  }
+
+
+  $(".start-gacha").on("click",function(){
+    $('.gif').fadeIn();
+    $('.gif').attr({"src":"assets/images/gif/gacha.gif"})
+
+    setTimeout(function(){
+      $('.gif').fadeOut();
+
+
+      probability = getRandomInt(1, randomProbability);
+      if (probability <= rareProbabilityAmount(0)){
+        getBirds(0);
+      } else if (probability <= rareProbabilityAmount(1)) {
+        getBirds(1);
+      } else if (probability <= rareProbabilityAmount(2)) {
+        getBirds(2);
+      } else {
+        getBirds(3);
+      }
+      birdsList();
+    },2000);
+  })
+
+  $(".zukan-icon").on("click",function(){
+    birdsList()
+  })
+
+  function getBirds(count){
+    bird = birds_array[count][getRandomInt(0, birds_array[count].length-1)]
+
+    $('.gacha-con').children().remove();
+    $('.gacha-con').append(`
+        <div class="gacha-header">
+          <img src="assets/images/bird/${bird.imgUrl}">
+        </div>
+        <div class="columns is-mobile">
+          <div class="column">
+            <a href="#index"><img src="assets/images/icon/back.png"></a>
+          </div>
+          <div class="column">
+            <a href="#zukan"><img src="assets/images/icon/zukan-button.png"></a>
+          </div>
+        </div>
+      `)
+    console.log(bird.rare +" : "+bird.name);
+    bird.get = true;
+  }
+
+  function birdsList(){
+    var falseArray = [];
+    $(".img-list-box .columns").children().remove();
+    for(var i = birds_array.length - 1; i >= 0; i--){
+      for(var j = birds_array[i].length - 1;j >= 0; j--){
+        if(birds_array[i][j].get){
+          $(".img-list-box .columns").append("<div class='column is-one-third'><img src='assets/images/bird/"+birds_array[i][j].imgUrl+"'></div>")
+        } else {
+          $(".img-list-box .columns").append("<div class='column is-one-third'><img src='assets/images/icon/tori.png'></div>")
+        }
+      }
+    }
+  }
+});
+</script>
+
+<script src="assets/js/app.js" async></script>
+</body>
+</html>
